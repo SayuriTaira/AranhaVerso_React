@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-page {
+    height: 110vh;
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\fundo.png);
+}
+
+.contact-page Footer {
+    margin-top: 70px;
+}
+
+@media (max-width: 1280px) {
+    .contact-page {
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-page {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-page {
+        height: auto;
+    }
+}

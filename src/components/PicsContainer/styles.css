@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pics-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pics-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 250px;
+    margin-top: 20px;
+}
+
+.pics {
+    width: 320px;
+    height: 300px;
+    margin-left: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(250, 250, 250, 0.2) 0px 7px 29px 0px;
+}
+
+.pics:nth-child(1) {
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\foto1.png);
+}
+
+.pics:nth-child(2) {
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\foto2.png);
+}
+
+.pics:nth-child(3) {
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\foto3.png);
+}
+
+.pics:nth-child(4) {
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\foto4.jpg);
+}
+
+.pics:nth-child(5) {
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\foto5.jpg);
+}
+
+.pics:nth-child(6) {
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\foto6.jpg);
+}
+
+.pics:hover {
+    scale: 1.04;
+}
+
+@media (max-width: 1280px) {
+    .pics-content {
+        column-gap: 100px;
+    }
+
+    .pics {
+        height: 200px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .pictures-page h1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pics-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pics {
+        width: 80%;
+        height: 300px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .pictures-page h1 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pics-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pics {
+        width: 80%;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.review-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-content {
+    width: 600px;
+    height: 700px;
+    background-color: rgb(39, 39, 39);
+    border: 2px solid rgb(109, 1, 1);
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.review-content h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: rgb(238, 238, 238);
+}
+
+.user {
+    width: 550px;
+    height: 80px;
+    background-color: rgb(206, 206, 206);
+    border: 2px solid rgb(160, 160, 160);
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.user-image {
+    height: 80px;
+}
+
+.user span {
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.comment-content {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.comment-content label {
+    font-size: 18px;
+    color: rgb(226, 226, 226);
+    margin-right: 5px;
+}
+
+.comment-content input {
+    width: 360px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.review-content button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.review-content button:hover {
+    background-color: rgb(114, 114, 114);
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .review-content {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-content {
+        width: 100%;
+    }
+
+    .user {
+        width: 80%;
+        height: 12%;
+    }
+
+    .comment-content {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .comment-content label {
+        font-size: 16px;
+        margin-right: 0;
+    }
+
+    .comment-content input {
+        width: 90%;
+    }
+
+    .review-content button {
+        width: 150px;
+        height: 40px;
+        margin-top: 35px;
+    }
+}

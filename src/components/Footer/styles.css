@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#logoFooter {
+    height: 150px;
+}
+
+.copyright-text {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 480px) {
+    #logoFooter {
+        width: 30%;
+        height: 60%;
+    }
+
+    span {
+        font-size: 15px;
+    }
+}

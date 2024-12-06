@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.review-page {
+    height: 106vh;
+    background-color: rgb(19, 19, 19);
+}
+
+@media (max-width: 768px) {
+    .review-page {
+        height: auto;
+    }
+}

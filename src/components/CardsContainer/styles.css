@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards-container {
+    width: 100%;
+    height: 700px;
+}
+
+.cards-content {
+    width: 100%;
+    display: flex;
+    padding: 0 100px;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.card {
+    height: 600px;
+    width: 100%;
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\miles.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.card:nth-child(2) {
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\peter.jpg);
+}
+
+.card:nth-child(3) {
+    background-image: url(C:\Users\Usuário\Desktop\WebDevelop\Study\Módulo08\ReactProject\src\assets\images\gwen.png);
+}
+
+.card:hover {
+    scale: 1.02;
+}
+
+@media (max-width: 900px) {
+    .cards-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards-content {
+        width: 97%;
+        padding: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards-content {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .card {
+        height: 50%;
+        width: 100%;
+        font-size: 16px;
+    }
+}
